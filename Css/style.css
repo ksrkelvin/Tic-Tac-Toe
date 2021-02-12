@@ -1,0 +1,118 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid grey;
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: '\1F6E1';
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: '\2694';
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#window{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.stage{
+    border: 1px solid gray;
+    border-left: 0;
+    border-right: 0;
+    background-color: beige;
+    padding: 50px;
+}
+
+#placar{
+    border: 1px solid gray;
+    background-color: beige;
+    border-right: 0;
+
+
+}
+
+#controllers{
+    position: relative;
+    border: 1px solid gray;
+    background-color: beige;
+    border-left: 0;
+
+}
+
+#reset{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+.controls{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid grey;
+    display: inline-block;
+    position: relative;
+}
+.button{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.placar{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+#placar p {
+    text-align: left;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: #fff;
+    padding: 10px;
+    width: 100px;
+}
